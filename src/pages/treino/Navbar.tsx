@@ -20,6 +20,7 @@ export default function Navbar() {
                 <div className="space-y-1 cursor-pointer group">
                     <div className="w-6 h-0.5 bg-white"></div>
                     <div className="w-6 h-0.5 bg-white"></div>
+                    <div className="w-6 h-0.5 bg-white"></div>
                 </div>
             </div>
         </nav>

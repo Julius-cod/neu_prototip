@@ -1,14 +1,16 @@
 import Navbar from "./Navbar";
 
 // Se a imagem está na pasta 'public', use apenas '/nome-da-imagem.jpg'
-const backgroundImageUrl = "/back.jpg";  
+import samoraiImg from "../../assets/samorai.png";
 
 export default function Samorai() {
     return (
-        <div 
-            className="min-h-screen w-full bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url('${backgroundImageUrl}')` }}
-        >
+         <section className="relative min-h-screen w-full flex flex-col ">
+         <img
+        src={samoraiImg}
+        alt="smorai IMG Background"
+        className="absolute inset-0 h-full w-full object-cover"
+      />
            {/* Adicionei 'flex flex-col' aqui para o conteúdo interno alinhar */}
            <div className="min-h-screen w-full bg-black/40 backdrop-brightness-75 flex flex-col">
 
@@ -29,6 +31,6 @@ export default function Samorai() {
                 </main>
 
             </div>
-        </div>
+        </section>
     );
 }
